@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Annotation Tool</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <header>
+            <!-- Upload CSV and Navigate -->
+            <input type="file" id="csvUpload" accept=".csv">
+            <input type="text" id="recordIdInput" placeholder="Jump to observe_record_id">
+            <button id="jumpButton">Jump</button>
+        </header>
+        <main>
+            <!-- Image Display Area -->
+            <div id="imageDisplay">Display Image here</div>
+        </main>
+        <aside>
+            <!-- Annotation Area -->
+            <textarea id="annotationText" placeholder="Suggested annotation from API goes here"></textarea>
+            <button id="acceptButton">Accept Suggestion</button>
+            <button id="editButton">Edit Suggestion</button>
+        </aside>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
